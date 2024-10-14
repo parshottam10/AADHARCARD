@@ -1,0 +1,313 @@
+.card
+{
+    position: relative;
+    border: 2px solid black;
+   
+    height: auto;
+    width: 85.60mm;
+    margin-right: 10px;
+
+}
+
+.Back_card
+{
+    position: relative;
+    border: 2px solid black;
+ 
+    height: auto;
+    width: 88.60mm;
+
+}
+#dob{
+    
+    font-family:  "Roboto",sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+}
+#gender{
+    font-size: 11px;
+    font-weight: 500;
+    font-family:  "Roboto",sans-serif;
+}
+.aadhar-card
+{
+    display: flex;
+}
+.logo
+{
+    display: flex;
+}
+.img1
+{
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 43px;
+    width: 35px;
+    background-color: white;
+}
+.img2
+{
+    margin-top: 5px;
+    margin-left: 15px;
+    height: 50px;
+    width: 180.91px;
+   
+}
+.img3 
+{
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 38px;
+    width: 78px;
+    margin-right: 10px;
+   
+}
+.photos
+{
+    display: flex;
+    
+}
+.photo
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+   
+}
+.contains p
+{
+    font-family:  "Roboto",sans-serif;
+    margin: 11px 7px -12px -13px;
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+ .ANum p{
+    margin-left: 100px;
+    margin-bottom: -5px;
+   
+    font-family:  "Roboto",sans-serif;
+    font-weight: bold;
+ }
+.line p
+{
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    margin-top: -10px;
+
+}
+.vid p{
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    margin-top: -15px;
+    font-weight: bold;
+
+}
+
+.p11 #w{
+    margin-bottom: 10px;
+}
+hr{
+  
+   margin: 0;
+    border: 1.5px solid red;
+    margin-top: 9px;
+}
+.firstcard > hr {
+    margin-top: 5px; /* Adjust this value to align with the back card */
+}
+.Back_card > hr {
+    margin-top: 5px; /* Ensure this value is the same as the first card */
+}
+.last
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.last1{
+    padding-top: 5px;
+}
+.last p{
+    margin-top: 0px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 0px;
+    color: red;
+}
+#address-english{
+    
+    font-family: "Roboto",sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 2px;
+    
+}
+#name-hindi{
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+}
+#name-english{
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+#addresshindiInput
+{
+    font-size: 10px;
+    font-weight: 700;
+   margin: 0;
+}
+
+#address-hindi{
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 0;
+   
+   font-family:  "Roboto",sans-serif;
+    
+}
+.back
+{
+    display: flex;
+  
+}
+.address-section {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 11px;
+    font-size: 12px;
+    width: 225px;
+    max-height: 80px;
+    display: inline;
+    word-wrap: break-word;
+    
+}
+
+
+.backcontent p
+{
+    margin: 11px 7px -12px -13px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.pata
+{
+  font-weight: 500;
+}
+.son
+{
+   
+}
+.add{
+    font-weight: bold;
+}
+
+
+.box
+{
+   
+    width: 80px;
+    height: 80px;
+    margin-left: 200px;
+    position: relative;
+    padding: 5px;
+
+    
+  
+}
+.box #back-qr-code{
+   position: absolute;
+   width: 110%;
+   height: 100px;
+   margin-left: 30px;
+}
+.back-aadhar-number p{
+   
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 3px;
+   margin-top: 20px;
+   margin-bottom: -5px;
+    /* font-family: 'OCR-B', Arial, sans-serif; */
+    font-family:  "Roboto",sans-serif;
+}
+.last1 {
+    display: flex;
+    align-items: center; /* Vertically aligns items in the center */
+    justify-content: center; /* Horizontally centers items */
+    gap: 10px; /* Adds some spacing between elements */
+    margin-bottom: 10px;
+}
+
+.last1 .tele,
+.last1 .web {
+    height: 14px;
+    width: 20px;
+}
+
+.last1 .p11 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center; /* Ensures text stays centered */
+}
+
+
+input[type="text"], input[type="date"], select, textarea {
+    width: 50%;
+    padding: 6px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+   
+}
+button {
+    padding: 10px 20px;
+    background-color: #b4d4b5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#btn:hover {
+    background-color: #45a049;
+
+}
+#aadharForm{
+    background-color: #425e30;
+}
+
+#btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(71, 223, 71);
+}
+
+.home{
+   
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color:rgb(163, 131, 223);
+}
+.fm{
+   
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color:rgb(163, 131, 223);
+}
+
+

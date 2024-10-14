@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parshottam Ahirwal - Aadhar Card Generation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .photo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            width: 80px;
+            height: 80px;
+            display: block;
+            overflow: hidden;
+        }
+
+
+
+
+        .login-form {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #mainContent {
+            display: none;
+            /* Initially hide the main content */
+        }
+
+        #loginButton {
+            background-color: rgb(71, 223, 71);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Login Form -->
+    <div class="login-form" id="loginForm">
+        <h2>Login</h2>
+        <label for="userID">User ID:</label> <br>
+        <input type="text" id="userID" placeholder="Enter your User ID"><br><br>
+
+        <label for="password">Password:</label> <br>
+        <input type="password" id="password" placeholder="Enter your Password"><br><br>
+
+        <button id="loginButton">Login</button>
+    </div>
+
+    <!-- Aadhar Form and Other Content (Initially hidden) -->
+    <div id="mainContent">
+        <div class="aadhar-card">
+            <div class="card">
+                <div class="">
+                    <div class="logo">
+                        <img class="img1" src="IMAGES/Satyamav_Jaytelogo.jpg" alt="">
+                        <img class="img2" src="IMAGES/baratlogo.jpg" alt="">
+                        <img class="img3" src="IMAGES/Aadhaarlogo.jpg" alt="">
+                    </div>
+
+                    <div class="photos">
+                        <div class="photo">
+                            <img id="user-photo" src="" alt="User Photo" style="display: block" />
+                        </div>
+
+                        <div class="contains">
+                            <p id="name-hindi">NAME IN HINDI</p>
+                            <p id="name-english">USER NAME</p>
+                            <p id="dob">जन्म तिथि/DOB: DD/MM/YYYY</p>
+                            <p id="gender">Gender:</p>
+                        </div>
+                    </div>
+                    <div class="ANum">
+                        <p id="A">xxxx xxxx xxxx </p>
+                    </div>
+                    
+                    <hr>
+                    <div class="last">मेरा &nbsp;<p>आधार &nbsp;</p>, मेरी &nbsp;पहचान</div>
+                </div>
+            </div>
+
+            <div class="Back_card">
+                <div class="logo">
+                    <img class="img1" src="IMAGES/Satyamav_Jaytelogo.jpg" alt="">
+                    <img class="img2" src="IMAGES/backbharatlogo.jpg" alt="">
+                    <img class="img3" src="IMAGES/Aadhaarlogo.jpg" alt="">
+                </div>
+                <div class="back">
+                    <div class="address-section">
+                        <p id="address-hindi">पता: पिता का नाम, पता</p>
+                        <p id="address-english">Address: Father's Name, Address in English</p>
+                    </div>
+                    <div class="box"><img id="back-qr-code" src="IMAGES/QR-code_aaDHAR.JPG" alt=""></div>
+                </div>
+
+                <div class="back-aadhar-number">
+                    <p id="B">xxxx xxxx xxxx </p>
+                </div>
+
+                <hr>
+                <div class="last1">
+                    <img class="tele" src="./IMAGES/telephone.png" alt="Telephone Icon">
+                    <span class="p11">1947 &nbsp;|</span>
+                
+                    <img class="web" src="./IMAGES/mail.png" alt="Email Icon">
+                    <span class="p11">help@uidai.gov.in &nbsp; |</span>
+                
+                    <img class="web" src="./IMAGES/website.png" alt="Web Icon">
+                    <span class="p11">www.uidai.gov.in</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <center>
+            <h2>Fill in your details</h2>
+            <form id="aadharForm">
+                <label for="nameEnglishInput">Name (English):</label> <br>
+                <input type="text" id="nameEnglishInput" name="nameEnglish"><br><br>
+
+                <label for="nameHindiInput">नाम (हिंदी):</label> <br>
+                <input type="text" id="nameHindiInput" name="nameHindi"><br><br>
+
+                <label for="dobInput">जन्म तिथि/DOB:</label> <br>
+                <input type="date" id="dobInput" name="dob"><br><br>
+
+                <label for="genderInput">Gender:</label> <br>
+                <select id="genderInput" name="gender">
+                    <option value="MALE">MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                    <option value="OTHER">OTHER</option>
+                </select><br><br>
+
+                <label for="care">CARE OF</label> <br>
+                <select id="care" name="care of">
+                    <option value="S/O">S/O</option>
+                    <option value="D/O">D/O</option>
+                    <option value="C/O">C/O</option>
+                    <option value="W/O">W/O</option>
+                </select><br><br>
+
+                <label for="fathername">Father's Name (English):</label> <br>
+                <textarea id="fname" name="fathername"></textarea><br><br>
+
+                <label for="fathernamehindi">पिता का नाम (Hindi):</label> <br>
+                <textarea id="fnamehindi" name="fathernamehindi"></textarea><br><br>
+
+                <label for="addressEnglishInput">Address (English):</label> <br>
+                <textarea id="addressEnglishInput" name="addressEnglish"></textarea><br><br>
+
+                <label for="addressHindiInput">पता (Hindi):</label> <br>
+                <textarea id="addressHindiInput" name="addressHindi"></textarea><br><br>
+
+                <label for="AadharNumber">Aadhar Number:</label> <br>
+                <input type="text" id="AadharNum" name="AadharNumber"><br><br>
+
+                <!-- File input for image upload -->
+                <label for="imageInput">User Image:</label> <br>
+                <input type="file" id="imageInput" name="userImage" accept="image/*"><br><br>
+
+                <button id="btn" type="submit">Generate Aadhar</button>
+            </form>
+        </center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
