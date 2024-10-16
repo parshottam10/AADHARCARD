@@ -4,8 +4,8 @@ document.getElementById('loginButton').addEventListener('click', function() {
     const password = document.getElementById('password').value;
 
     // Hardcoded ID and Password for demonstration (you can change this)
-    const validID = 'Parshottam';
-    const validPassword = 'Sknksmt@2002';
+    const validID = 'authentication';
+    const validPassword = 'Neeraj$rai*1';
 
     // Check if the credentials match
     if (userID === validID && password === validPassword) {
